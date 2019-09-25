@@ -1,0 +1,39 @@
+.pd10.data-v-3223a688 {
+  padding: 20rpx;
+}
+.sousuo.data-v-3223a688 {
+  width: 100%;
+  height: 80rpx;
+  background: #FFFFFF;
+  padding: 8rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.sousuo input.data-v-3223a688 {
+    line-height: 60rpx;
+    height: 60rpx;
+}
+.foot-dingwei.data-v-3223a688 {
+  height: 100rpx;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  line-height: 100rpx;
+  background: #FFFFFF;
+  font-size: 28rpx;
+  border-top: 1px solid #f8f8f8;
+}
+.foot-dingwei .left.data-v-3223a688 {
+    width: 75%;
+    padding-left: 25rpx;
+}
+.foot-dingwei .right.data-v-3223a688 {
+    width: 25%;
+}
+

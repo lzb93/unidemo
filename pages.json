@@ -1,0 +1,147 @@
+{
+    "pages": [ //pages数组中第一项表示应用启动页,
+		  {
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "主页"
+			}
+		  },{
+            "path": "pages/main/main",
+            "style": {
+                 "navigationStyle": "custom",
+				 "app-plus": {
+					 "titleView": false
+				 }
+            }
+        },{
+            "path": "pages/webh5/webh5",
+            "style": {
+                 "navigationStyle": "custom",
+				 "app-plus": {
+					 "titleView": false
+				 }
+            }
+        }, {
+            "path": "pages/login/login",
+            "style": {
+                "navigationBarTitleText": "登录"
+            }
+        }, {
+            "path": "pages/reg/reg",
+            "style": {
+                "navigationBarTitleText": "注册"
+            }
+        }, {
+            "path": "pages/pwd/pwd",
+            "style": {
+                "navigationBarTitleText": "找回密码"
+            }
+        }, {
+            "path": "pages/user/user",
+            "style": {
+                "navigationBarTitleText": "我的"
+            }
+        }, {
+            "path": "pages/from/from",
+            "style": {
+                "navigationBarTitleText": "表单"
+            }
+        }, {
+            "path": "pages/list/list",
+            "style": {
+                "navigationBarTitleText": "列表"
+            }
+        },{
+            "path" : "pages/index/tool/tool",
+            "style" : {
+				"navigationBarTitleText": "更多工具"
+			}
+        }
+        ,{
+            "path" : "pages/unit/swipe-action/swipe-action",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/index/viplist/viplist",
+            "style" : {
+            	"navigationBarTitleText": "会员管理"
+            }
+        }
+        ,{
+            "path" : "pages/index/vip/vip",
+             "style" : {
+            	"navigationBarTitleText": "会员详情"
+            }
+        }
+        ,{
+            "path" : "pages/index/shoplist/shoplist",
+			"style" : {
+            	"navigationBarTitleText": "商品管理"
+            }
+        }
+        ,{
+            "path" : "pages/index/shoplist/stock/stock",
+			"style" : {
+            	"navigationBarTitleText": "出入库管理"
+            }
+        },
+		{
+		    "path" : "pages/index/count/count",
+			"style" : {
+		    	"navigationBarTitleText": "消费计次"
+		    }
+		},{
+            "path" : "pages/index/charge/charge",
+			"style" : {
+            	"navigationBarTitleText": "会员充值"
+            }
+        }
+        ,{
+            "path" : "pages/index/second/second",
+            "style" : {
+            	"navigationBarTitleText": "会员充次"
+            }
+        }
+        ,{
+            "path" : "pages/index/integral/integral",
+            "style" : {
+            	"navigationBarTitleText": "积分加减"
+            }
+        }
+        ,{
+            "path" : "pages/webh5/webh5",
+            "style" : {}
+        }
+    ],
+    "tabBar": {
+        "color": "#7a7e83",
+        "selectedColor": "#0faeff",
+        "backgroundColor": "#ffffff",
+        "list": [{
+            "pagePath": "pages/index/index",
+            "text": "主页",
+            "iconPath": "static/img/home.png",
+            "selectedIconPath": "static/img/homeHL.png"
+        },{
+            "pagePath": "pages/main/main",
+            "text": "统计",
+            "iconPath": "static/img/main.png",
+            "selectedIconPath": "static/img/mainHL.png"
+        },{
+            "pagePath": "pages/webh5/webh5",
+            "text": "web-h5",
+            "iconPath": "static/img/home.png",
+            "selectedIconPath": "static/img/homeHL.png"
+        }, {
+            "pagePath": "pages/user/user",
+            "text": "我的",
+            "iconPath": "static/img/user.png",
+            "selectedIconPath": "static/img/userHL.png"
+        }]
+    },
+    "globalStyle": {
+        "navigationBarTextStyle": "white",
+        "navigationBarBackgroundColor": "#0faeff",
+        "backgroundColor": "#fbf9fe"
+    }
+}

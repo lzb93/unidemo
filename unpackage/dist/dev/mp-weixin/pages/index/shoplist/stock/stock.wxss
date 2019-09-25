@@ -1,0 +1,16 @@
+.btn-row button {
+  width: 45%;
+}
+.tab .col-2 {
+  border-bottom: 2px solid #fff;
+  background: #fff;
+  text-align: center;
+  line-height: 80rpx;
+  height: 80rpx;
+  font-size: 30rpx;
+}
+.tab .active {
+  border-bottom: 2px solid #007aff;
+  color: #007aff;
+}
+

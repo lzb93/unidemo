@@ -1,0 +1,2 @@
+setCssToHead([".",[1],"btn-row wx-button { width: 45%; }\n",],undefined,{path:"./pages/from/from.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/from/from.wxml') } }));

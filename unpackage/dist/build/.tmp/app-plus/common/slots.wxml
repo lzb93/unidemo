@@ -1,0 +1,15 @@
+<import src="/components/swipe-action.vue.wxml" />
+<import src="/node-modules/@dcloudio/uni-ui/lib/uni-swipe-action/uni-swipe-action.vue.wxml" />
+<import src="/common/slots.wxml" />
+<import src="/components/m-input.vue.wxml" />
+<import src="/node-modules/@dcloudio/uni-ui/lib/uni-calendar/uni-calendar.vue.wxml" />
+<import src="/components/shopfoot.vue.wxml" />
+<import src="/components/m-icon/m-icon.vue.wxml" />
+<import src="/node-modules/@dcloudio/uni-ui/lib/uni-calendar/uni-calendar-item.vue.wxml" />
+<import src="/node-modules/@dcloudio/uni-ui/lib/uni-icon/uni-icon.vue.wxml" />
+<import src="/node-modules/@dcloudio/uni-ui/lib/uni-badge/uni-badge.vue.wxml" />
+
+<template name="M6b6453ad-default-6b6453ad-0-+index"><view class="_view M6b6453ad row ulist"><view class="_view M6b6453ad icon"><image src="../../static/img/homeHL.png" class="_image M6b6453ad"></image></view><view class="_view M6b6453ad left">{{item.name}}</view><view class="_view M6b6453ad right tr">{{item.money}}</view></view></template>
+
+<template name="M46507e4b-default-46507e4b-1"><template data="{{...$root['0'], ...$root[$k], $root}}" is="{{$slotdefault || 'default'}}"></template></template>
+

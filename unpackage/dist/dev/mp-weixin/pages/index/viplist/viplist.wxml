@@ -1,0 +1,2 @@
+<import src="./viplist.vue.wxml" />
+    <template is="c74d9c20" data="{{ ...$root['0'], $root }}"/>

@@ -1,0 +1,69 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/main/main",
+    "pages/webh5/webh5",
+    "pages/login/login",
+    "pages/reg/reg",
+    "pages/pwd/pwd",
+    "pages/user/user",
+    "pages/from/from",
+    "pages/list/list",
+    "pages/index/tool/tool",
+    "pages/unit/swipe-action/swipe-action",
+    "pages/index/viplist/viplist",
+    "pages/index/vip/vip",
+    "pages/index/shoplist/shoplist",
+    "pages/index/shoplist/stock/stock",
+    "pages/index/count/count",
+    "pages/index/charge/charge",
+    "pages/index/second/second",
+    "pages/index/integral/integral",
+    "pages/webh5/webh5"
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#0faeff",
+    "backgroundColor": "#fbf9fe"
+  },
+  "usingComponents": {},
+  "tabBar": {
+    "color": "#7a7e83",
+    "selectedColor": "#0faeff",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "static/img/home.png",
+        "selectedIconPath": "static/img/homeHL.png"
+      },
+      {
+        "pagePath": "pages/main/main",
+        "text": "统计",
+        "iconPath": "static/img/main.png",
+        "selectedIconPath": "static/img/mainHL.png"
+      },
+      {
+        "pagePath": "pages/webh5/webh5",
+        "text": "web-h5",
+        "iconPath": "static/img/home.png",
+        "selectedIconPath": "static/img/homeHL.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "static/img/user.png",
+        "selectedIconPath": "static/img/userHL.png"
+      }
+    ]
+  },
+  "nvueCompiler": "weex",
+  "renderer": "auto",
+  "splashscreen": {
+    "alwaysShowBeforeRender": true,
+    "autoclose": false
+  },
+  "appname": "cyd-uni",
+  "compilerVersion": "2.2.2"
+}

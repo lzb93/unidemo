@@ -1,0 +1,8 @@
+<import src="/components/swipe-action.vue.wxml" />
+<import src="/node-modules/@dcloudio/uni-ui/lib/uni-swipe-action/uni-swipe-action.vue.wxml" />
+<import src="/common/slots.wxml" />
+
+<template name="M069ed196-default-069ed196-0-+index"><view class="_view M069ed196 row ulist"><view class="_view M069ed196 icon"><image src="../../static/img/homeHL.png" class="_image M069ed196"></image></view><view class="_view M069ed196 left">{{item.name}}</view><view class="_view M069ed196 right tr">{{item.money}}</view></view></template>
+
+<template name="M7904b9d3-default-7904b9d3-1"><template data="{{...$root['0'], ...$root[$k], $root}}" is="{{$slotdefault || 'default'}}"></template></template>
+

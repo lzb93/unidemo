@@ -1,0 +1,55 @@
+.user-top {
+  background: -webkit-gradient(linear, left bottom, left top, from(#9bd8f7), to(#0faeff));
+  background: -o-linear-gradient(bottom, #9bd8f7, #0faeff 100%);
+  background: linear-gradient(0deg, #9bd8f7, #0faeff 100%);
+  height: 300rpx;
+  margin-bottom: 20rpx;
+}
+.utop-top {
+  height: 200rpx;
+  position: relative;
+}
+.utop-bottom {
+  height: 100rpx;
+  margin-left: 20rpx;
+  border-top: 1px solid #fff;
+  position: relative;
+  line-height: 80rpx;
+  color: #fff;
+}
+.utop-bottom view {
+    font-size: 36rpx;
+}
+.utop-bottom image {
+    width: 60rpx;
+    height: 60rpx;
+    margin: 10rpx;
+    float: left;
+}
+.utop-head image {
+  width: 100rpx;
+  height: 100rpx;
+  position: absolute;
+  top: 30rpx;
+  left: 20rpx;
+  border-radius: 100%;
+  border: 1rpx solid #fff;
+}
+.utop-head .utop-name {
+  position: absolute;
+  top: 40rpx;
+  left: 140rpx;
+  color: #FFFFFF;
+}
+.utop-dingwei {
+  position: absolute;
+  top: 40rpx;
+  right: 0rpx;
+  color: #FFFFFF;
+  background: #057AFF;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  width: 150rpx;
+}
+
