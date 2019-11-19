@@ -115,6 +115,21 @@
 			};
 		},
 		onLoad() {
+		     // uni.setStorage('ceshi',"你好测试");
+			uni.setStorage({
+			    key: 'ceshi',
+			    data: '你好测试',
+			    success: function () {
+			        
+					uni.getStorage({
+					    key: 'ceshi',
+					    success: function (res) {
+					        console.log(res.data);
+					    }
+					});
+			    }
+			});
+			 
 			 this.channel({ group:'home',sort:'sort',by:'asc'});
 		},
 		methods: {
@@ -126,22 +141,10 @@
 			async channel(params) {
 			    let result = await channel(params);
 				if(result.status==0){
-					uni.showModal('提示','成功')
-					// uni.showModal({
-					//     title: '提示',
-					//     content: '这是一个模态弹窗',
-					//     success: function (res) {
-					//         if (res.confirm) {
-					//             console.log('用户点击确定');
-					//         } else if (res.cancel) {
-					//             console.log('用户点击取消');
-					//         }
-					//     }
-					// });
+					
 				}else{
 					uni.showModal(result.msg)
 				}
-			    console.log(result);
 			}
 			// channel(params){
 			//     channel(params).then(data => {

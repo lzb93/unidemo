@@ -64,3 +64,38 @@ export function randomString(len) {
   }
   return pwd
 }
+
+
+const src = 'http://uniapp.dcloud.io';
+// 组件
+const showLoadding=function (text) {
+		    uni.showToast({
+		      title: text,
+		      icon: 'loading',
+		      duration: 3000
+		    })
+		};
+const showSuccess=function (text) {
+		    uni.showToast({
+		      title: text,
+		      icon: 'success'
+		    });
+		};
+const showModal=function (content,title) {
+		 //    uni.hideToast();
+			// uni.hideLoading();
+		    uni.showModal({
+		      title:title||"提示",
+		      content: JSON.stringify(content),
+		      showCancel: false
+		    });
+		};
+
+
+
+export default {  
+    src,
+	showLoadding,
+    showSuccess,  
+    showModal  
+} 

@@ -39,7 +39,6 @@ let util = {};
 // request
 util.request = function ({
 	method = "GET",
-	login,
     url,
     data,
     success,
@@ -50,22 +49,9 @@ util.request = function ({
 	if (0 != url.indexOf("http")) {
         url = util.baseUrl() + url
     }
-	if(login){
-		// ym: (Code,data,vi 请求bind接口获取id 拼接出Authorization作为用户登录凭证)
-		
-		var header = {
-		    'content-type': 'application/json',
-			'Authorization':'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6NjJ9._vDoDQFKnhxj83vQS-rnsyjE_rjVVQ7-SATGpVgUINY',
-			'X-WX-Code': '011Is9Te1sNzzy0AHnSe1WhnTe1Is9To',
-			'X-WX-Encrypted-Data': 'BPsTfSliBTKULjCk5byHhuVgkL2sxpzyspNMJNz0s0Dcuo6jERbQZbuPv+kS1nvpVFgb9BZdtbotvcuHRkzVP91rQJQNriW4nBUPwp6lA+I6zjCDu7853lacmJ9JNSfMpwyRlEeVRJx5N9E0vE8cSSeK7kG12/P2x2B3ar7A9BmgybTqP6x9+3QW1pNsVGhnJuYkBsFJBajvKA5cVOwhARZQRG3cTCNuR2eB56CDCjXf36UNtQzsBZQ9BNn3wpnEIbPt6jc319avAabzD3OmVewEJQNJedNeDajPDejZhJLEbV7WvQ0DeuCfBH3oETQvJjQ+hkile/FSpHE9j/Gg41AJbK4Ai3QQisRhAJ3lDVUUqDnV2HCV7xQlN+OR39QhZblby9EHTMzFDBofF+BtpGB708NKUO1NDWk5JbF6laatYGSWGvomAHfljkbI5sZz7SDDD+hq+l1kgRj8BxB8VQ==',
-			'X-WX-IV':'nbgeZbgszsRZuhAD9XwWHQ=='
-		}
-	}else{
-		var header = {
-		    'content-type': 'application/json'
-		}
-	}
-
+    var header = {
+        'content-type': 'application/json'
+    }
 	return new Promise((resolve, reject) => {
 		uni.request({
 			url: url,
@@ -96,9 +82,9 @@ util.request = function ({
 };
 
 export default util;
-export function get(url, data = {},login ) {
-    return util.request({url:url,data:data,method:'GET',login:login||false})
+export function get(url, data = {}, ) {
+    return util.request({url:url,data:data,method:'GET'})
 }
-export function post(url, data = {},login) {
-   return util.request({url:url,data:data,method:'POST',login:login||true})
+export function post(url, data = {}) {
+   return util.request({url:url,data:data,method:'POST'})
 }
